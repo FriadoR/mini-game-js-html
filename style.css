@@ -9,3 +9,29 @@
 .card .back-view img {
   max-width: 45px;
 }
+.wrapper {
+  height: 400px;
+  width: 400px;
+  background: white;
+  border-radius: 10px;
+}
+.cards,
+.card,
+.view {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+}
+.cards {
+  height: 100%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: violet;
+}
