@@ -1,1 +1,1 @@
-# mini-game-js-html
+# Mini-game-js-html
