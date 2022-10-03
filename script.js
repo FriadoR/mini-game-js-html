@@ -29,7 +29,7 @@ function matchCards(img1, img2) {
     if (matched == 8) {
       // close game, matched 8 * 2 = 16 cards
       setTimeout(() => {
-        return shuffleCard;
+        return shuffleCard();
       }, 1000); // calling shuffleCard function after 1 sec
     }
 
@@ -55,9 +55,8 @@ function matchCards(img1, img2) {
 
 function shuffleCard() {
   matched = 0;
-  disableDeck = false;
   cardOne = cardTwo = "";
-
+  disableDeck = false;
   // creating array of 16 items and each item is repeated twice
   let arr = [1, 2, 3, 4, 5, 6, 7, 8, 1, 2, 3, 4, 5, 6, 7, 8];
   arr.sort(() => (Math.random() > 0.5 ? 1 : -1)); // sorting array item randomly
